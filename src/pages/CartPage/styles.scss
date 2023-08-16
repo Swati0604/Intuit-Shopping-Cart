@@ -1,0 +1,56 @@
+
+@import '../../styles/colors.scss';
+
+.cart-container {
+  .cart-wrapper {
+    padding: 20px;
+
+    @media screen and (min-width: 600px){
+      padding: "10px"
+    }
+  }
+
+  .title {
+    font-weight: 300;
+    text-align: center;
+  }
+
+  .top-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  .top-button {
+    padding: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    background-color: $black;
+    color: $white;
+  }
+
+  .top-text-container {
+    @media screen and (min-width: 600px){
+      display: "none"
+    }
+
+    span {
+      text-decoration: underline;
+      cursor: pointer;
+      margin: 0px 10px;
+    }
+  }
+
+  .bottom-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+
+    @media screen and (min-width: 600px){
+      flex-direction: "column"
+    }
+  }
+}
+

@@ -1,0 +1,97 @@
+@import '../../styles/colors.scss';
+
+.order-info-section-container {
+  flex: 2;
+  padding: 0 10px 0 10px;
+
+  .order-info-section {
+    .product-section {
+      display: flex;
+      justify-content: space-between;
+
+      @media screen and (min-width: 600px){
+        flex-direction: "column"
+      }
+    }
+
+    .product-details-section {
+      flex: 2;
+      display: flex;
+    }
+
+    .product-image {
+      width: 180px;
+      height: 200px
+    }
+
+    .product-details {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+
+    .price-details {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .product-amount-container {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .product-count {
+      font-size: 24px;
+      margin: 5px;
+
+      @media screen and (min-width: 600px){
+        margin: "5px 15px" 
+      }
+    }
+
+    .product-total-price {
+      font-size: 30px;
+      font-weight: 200;
+
+      @media screen and (min-width: 600px){
+        margin-bottom: "20px"
+      }
+    }
+
+    .horizontal-line {
+      background-color: #eee;
+      border: none;
+      height: 1px;
+    }
+
+    .remove-btn {
+      width: 200px;
+      height: 40px;
+      border: 2px solid $teal;
+      background-color: $white;
+      border-radius: 6px;
+      color: $teal;
+      cursor: pointer;
+    }
+
+    .change-item-count-btn {
+      background-color: $white;
+      border: 1px solid $border-color;
+      border: flex;
+      justify-content: center;
+      align-items: center;
+      color: $black;
+      cursor: pointer;
+    }
+
+    .change-item-count-btn[disabled] {
+      opacity: 0.5;
+      background-color: $border-color;
+    }
+  }
+}
